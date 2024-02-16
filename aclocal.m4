@@ -24,7 +24,7 @@ AC_DEFUN([CHECK_SSL],
 [
     AC_MSG_CHECKING(for ssl)
     ssldirs="/usr/local/openssl /usr/lib/openssl /usr/openssl \
-	    /usr/local/ssl /usr/lib/ssl /usr/ssl \
+	    /usr/local/ssl /sw /opt/sw /usr/lib/ssl /usr/ssl \
 	    /usr/pkg /usr/local /usr"
     AC_ARG_WITH(ssl,
 	    AC_HELP_STRING([--with-ssl=DIR], [path to ssl]),
@@ -55,7 +55,7 @@ AC_DEFUN([CHECK_SSL],
 AC_DEFUN([CHECK_ZEROCONF],
 [
     AC_MSG_CHECKING(for zeroconf)
-    zeroconfdirs="/usr /usr/local"
+    zeroconfdirs="/usr /usr/local /sw /opt/sw"
     AC_ARG_WITH(zeroconf,
 	    AC_HELP_STRING([--with-zeroconf=DIR], [path to zeroconf]),
 	    zeroconfdirs="$withval")
@@ -78,7 +78,7 @@ AC_DEFUN([CHECK_ZEROCONF],
 AC_DEFUN([CHECK_ZLIB],
 [
     AC_MSG_CHECKING(for zlib)
-    zlibdirs="/usr /usr/local"
+    zlibdirs="/usr /usr/local /sw /opt/sw"
 	withval=""
     AC_ARG_WITH(zlib,
             [AC_HELP_STRING([--with-zlib=DIR], [path to zlib])],
@@ -129,7 +129,7 @@ AC_DEFUN([CHECK_SASL],
 [
     AC_MSG_CHECKING(for sasl)
     sasldirs="/usr/local/sasl2 /usr/lib/sasl2 /usr/sasl2 \
-            /usr/pkg /usr/local /usr"
+            /usr/pkg /usr/local /sw /opt/sw /usr"
     AC_ARG_WITH(sasl,
             AC_HELP_STRING([--with-sasl=DIR], [path to sasl]),
             sasldirs="$withval")

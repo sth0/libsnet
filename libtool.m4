@@ -1948,8 +1948,8 @@ shlibpath_var=
 shlibpath_overrides_runpath=unknown
 version_type=none
 dynamic_linker="$host_os ld.so"
-sys_lib_dlsearch_path_spec="/lib /usr/lib"
-sys_lib_search_path_spec="/lib /usr/lib /usr/local/lib"
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/local/bin /sw/lib /opt/sw/lib"
+sys_lib_search_path_spec="/lib /usr/lib /usr/local/lib /sw/lib /opt/sw/lib"
 
 case $host_os in
 aix3*)
@@ -2026,8 +2026,8 @@ bsdi4*)
   soname_spec='${libname}${release}.so$major'
   finish_cmds='PATH="\$PATH:/sbin" ldconfig $libdir'
   shlibpath_var=LD_LIBRARY_PATH
-  sys_lib_search_path_spec="/shlib /usr/lib /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
-  sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/local/lib"
+  sys_lib_search_path_spec="/shlib /usr/lib /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib /sw/lib /opt/sw/lib"
+  sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/local/lib /sw/lib /opt/sw/lib"
   export_dynamic_flag_spec=-rdynamic
   # the default ld.so.conf also contains /usr/contrib/lib and
   # /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
@@ -2159,8 +2159,8 @@ irix5* | irix6* | nonstopux*)
   esac
   shlibpath_var=LD_LIBRARY${shlibsuff}_PATH
   shlibpath_overrides_runpath=no
-  sys_lib_search_path_spec="/usr/lib${libsuff} /lib${libsuff} /usr/local/lib${libsuff}"
-  sys_lib_dlsearch_path_spec="/usr/lib${libsuff} /lib${libsuff}"
+  sys_lib_search_path_spec="/usr/lib${libsuff} /lib${libsuff} /usr/local/lib${libsuff} /sw/lib/lib${libsuff} /opt/sw/lib/lib${libsuff}"
+  sys_lib_dlsearch_path_spec="/usr/lib${libsuff} /lib${libsuff} /sw/lib/lib${libsuff} /opt/sw/lib/lib${libsuff}"
   ;;
 
 # No shared lib support for Linux oldld, aout, or coff.
@@ -2252,7 +2252,7 @@ osf3* | osf4* | osf5*)
   soname_spec='${libname}${release}.so$major'
   library_names_spec='${libname}${release}.so$versuffix ${libname}${release}.so$major $libname.so'
   shlibpath_var=LD_LIBRARY_PATH
-  sys_lib_search_path_spec="/usr/shlib /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+  sys_lib_search_path_spec="/usr/shlib /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib /sw/lib /opt/sw/lib"
   sys_lib_dlsearch_path_spec="$sys_lib_search_path_spec"
   hardcode_into_libs=yes
   ;;
